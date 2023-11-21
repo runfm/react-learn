@@ -1,0 +1,17 @@
+.cost-price {
+  display: flex;
+  align-items: center;
+  &-text {
+    font-weight: bold;
+  }
+
+  &-editor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+
+    & > input {
+      grid-column: 1 / span 2;
+    }
+  }
+}

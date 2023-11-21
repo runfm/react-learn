@@ -1,0 +1,33 @@
+.cost-date {
+  &-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-month {
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+
+    &-year {
+      font-size: 0.75rem;
+    }
+
+    &-day {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  &-editor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0.5rem;
+
+    &-input{
+        grid-column: 1/ span 2;
+    }
+  }
+}

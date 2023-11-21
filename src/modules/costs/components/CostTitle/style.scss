@@ -1,0 +1,17 @@
+.cost-title {
+  display: flex;
+  align-items: center;
+  &-header {
+    color: var(--color-white);
+  }
+
+  &-editor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    & > input {
+      grid-column: 1 / span 2;
+    }
+  }
+}

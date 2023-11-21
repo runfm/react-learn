@@ -1,0 +1,45 @@
+.layout-test {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr min-content;
+
+  footer,
+  main {
+    padding: 1rem;
+  }
+
+  main {
+    border-left: 1px solid var(--color-grey-light);
+    overflow-y: auto;
+  }
+
+  header {
+    display: grid;
+    grid-auto-flow: row;
+    align-content: start;
+
+    & a {
+      text-decoration: none;
+      color: var(--color-blue);
+      padding: 0.65rem;
+
+      &.active{
+        color: var(--color-orange);
+      }
+
+      &:hover{
+        background-color: var(--color-grey-light);
+      }
+    }
+
+    & hr{
+      width: 100%;
+    }
+  }
+
+  footer {
+    border-top: 1px solid var(--color-grey-light);
+    grid-column: 1 / span 2;
+  }
+}
